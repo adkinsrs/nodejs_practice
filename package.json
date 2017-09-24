@@ -1,0 +1,23 @@
+{
+  "name": "nodejs_practice",
+  "version": "1.0.0",
+  "description": "Modules to run the tutorials",
+  "main": "meadowlark.js",
+  "dependencies": {
+    "express": "^4.15.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adkinsrs/nodejs_practice.git"
+  },
+  "author": "Shaun Adkins",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adkinsrs/nodejs_practice/issues"
+  },
+  "homepage": "https://github.com/adkinsrs/nodejs_practice#readme"
+}
