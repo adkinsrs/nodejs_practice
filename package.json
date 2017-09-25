@@ -4,7 +4,8 @@
   "description": "Modules to run the tutorials",
   "main": "meadowlark.js",
   "dependencies": {
-    "express": "^4.15.4"
+    "express": "^4.15.4",
+    "express3-handlebars": "^0.5.2"
   },
   "devDependencies": {},
   "scripts": {
