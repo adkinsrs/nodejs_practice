@@ -2,10 +2,29 @@
 <html>
 <head>
     <title>Meadowlark Travel</title>
+    {{#if showTests}}
+        <link rel="stylesheet" href="/vendor/mocha.css">
+    {{/if}}
+    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
 </head>
 <body>
     <!-- 'public' directory invisible to client.  Served by the 'express.static' JS command -->
     <header><img src="/img/logo.png" alt="Meadowlawk Travel Logo"></header>
     {{{body}}}
+
+    {{#if showTests}}
+        <div id="mocha"></div>
+        <script src="/vendor/mocha.js"></script>
+        <script src="/vendor/chai.js"></script>
+        <script>
+            mocha.ui('tdd');
+            var assert = chai.assert;
+        </script>
+        <script src="/qa/tests-global.js"></script>
+        {{#if pageTestScript}}
+            <script src="{{pageTestScript}}"></script>
+        {{/if}}
+        <script>mocha.run();</script>
+    {{/if}}
 </body>
 </html>
