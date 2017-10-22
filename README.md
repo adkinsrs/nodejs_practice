@@ -7,7 +7,6 @@ Personal notes:
 
 Lessons I skipped writing code for:
 * Ch 2 - Serving Static Resources
-* Ch 3 - Dynamic Content in Views 
-* Ch 4 - Node Modules
+* Ch 3 - Dynamic Content in Views (did add 'fortune' code in Ch 4 - Node Modules though)
 
 Original code samples from the book can be found at https://github.com/EthanRBrown/web-development-with-node-and-express

@@ -2,6 +2,7 @@
 // Fictional website for a company that offers services for those traveling to Oregon
 
 var express = require('express');
+var fortune = require('./lib/fortune.js');
 
 var app = express();
 
@@ -31,6 +32,7 @@ app.get('/', function(req, res) {
 
 app.get('/about', function(req, res) {
     res.render('about', {
+        fortune: fortune.getFortune(),
         pageTestScript: '/qa/tests-about.js'  
     } );
 });
